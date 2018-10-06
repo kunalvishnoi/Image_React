@@ -16,7 +16,8 @@ class SecondPart extends Component {
       secondpic: null,
       email: '',
       link: '',
-      expand: true
+      expand: true,
+      thankyou:'Thanks for you submission'
     }
   }
  selectChangedHandler = event => {
@@ -140,7 +141,7 @@ class SecondPart extends Component {
 
       ) : (
         <div className="d-flex justify-content-center align-items-center" style={{height: '100vh'}}>
-      <p>{this.state.link}</p>
+      <h1>{this.state.thankyou}</h1>
       </div>
       ) }
       </div>
